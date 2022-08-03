@@ -40,8 +40,8 @@ railways_dep(){
 install_okteto_cli(){
     if [ $OKTETO_TOKEN ]
         then
-            echo -e "\n\nInstalling Okteto-CLI... "
-            curl https://get.okteto.com -sSfL | sh
+            echo -e "\n\nInstalling Scallingo... "
+            curl https://cli-dl.scalingo.com/install -sSfL | sh
     fi
 }
 
