@@ -38,9 +38,9 @@ railways_dep(){
 }
 
 install_okteto_cli(){
-    if [ $OKTETO_TOKEN ]
+    if [ $SCALINGO_TOKEN ]
         then
-            echo -e "\n\nInstalling Scallingo... "
+            echo -e "\n\nInstalling Scalingo... "
             curl https://cli-dl.scalingo.com/install -sSfL | sh
     fi
 }
@@ -49,7 +49,7 @@ main(){
     (clone_repo)
     (install_requirements)
     (railways_dep)
-    (install_okteto_cli)
+    (install_scalingo_cli)
 }
 
 main
