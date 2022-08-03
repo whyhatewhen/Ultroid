@@ -1,1 +1,1 @@
-python3 -m pyUltroid
+web: bash startup
